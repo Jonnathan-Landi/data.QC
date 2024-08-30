@@ -1,9 +1,21 @@
-################################################################################
-# Autor: Jonnathan Landi
-# Correo: jonnathana.landi@ucuenca.edu.ec / jonnathan.landi@outlook.com
-# Versión: 1.8.6 (Beta)
-
-
+#' Control de Calidad de Datos de Intervalo de 5 Minutos
+#'
+#' Esta función está diseñada para identificar y corregir intervalos incorrectos en datos con una frecuencia de 5 minutos.
+#' Se utiliza para procesar datos en paralelo y corregir valores faltantes basándose en los valores más cercanos.
+#'
+#' @param dt Un `data.table` con una columna `TIMESTAMP` y una columna de valores numéricos.
+#' @param variable El nombre de la columna en `dt` que contiene los valores a analizar.
+#' @return Un `data.table` corregido con intervalos de tiempo y valores ajustados.
+#' @details
+#' - La función verifica si los intervalos entre `TIMESTAMP` son de 5 minutos.
+#' - Corrige los intervalos incorrectos rellenando los valores `NA` con los valores más cercanos.
+#' - Verifica que los intervalos corregidos sean correctos y lanza un error si no lo son.
+#' @import data.table
+#' @importFrom future future_lapply
+#' @importFrom future.apply future_lapply
+#' @importFrom lubridate ceiling_date
+#' @importFrom parallel detectCores
+#' @export
 ################################################################################
 #             Control de Calidad de Ldatos de Nivel I (Automático)
 ################################################################################
