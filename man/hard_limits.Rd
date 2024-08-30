@@ -1,7 +1,7 @@
 \name{hard_limits}
 \alias{hard_limits}
 \title{
-Apply Hard Limits to a Data Table Variable
+Verify whether the values of a hydrometeorological variable are within an established range.
 }
 \description{
 This function applies hard limits to a specified variable in a data table and flags the values based on whether they fall within or outside of the specified limits.
@@ -33,7 +33,7 @@ A \code{data.table} with an additional column \code{Flag_LimDuros} indicating wh
 No references available.
 }
 \author{
-Your Name or the Name of the Function's Author
+Jonnathan Landi
 }
 \note{
 This function is intended for use with data.tables in R.

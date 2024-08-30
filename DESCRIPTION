@@ -1,10 +1,11 @@
 Package: data.QC
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Quality control of hydrometeorological data
+Version: 1.0.0
 Authors@R: 
     person("Jonnathan", "Landi", , "jonnathan.landi@outlook.com", role = c("aut", "cre"),
            comment = c(ORCID = "0009-0003-3162-6647"))
-Description: data.QC is an algorithm designed to perform robust preprocessing of meteorological data. Each process 
+Description: data.QC is an algorithm designed to perform robust preprocessing of meteorological data. 
+It provides functionalities for cleaning, quality control, and analysis of hydrometeorological datasets.
 License: Apache License 2.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
@@ -13,17 +14,18 @@ Imports:
     ggplot2,
     dplyr,
     data.table, 
-    dplyr, 
     svDialogs, 
     lubridate, 
-    ggplot2,
     zoo, 
     sp, 
     spdep, 
     trend, 
-    this.path, 
     forecast, 
     sf,
     future.apply, 
     doParallel,
     openxlsx
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
