@@ -4,8 +4,7 @@ Version: 1.0.0
 Authors@R: 
     person("Jonnathan", "Landi", , "jonnathan.landi@outlook.com", role = c("aut", "cre"),
            comment = c(ORCID = "0009-0003-3162-6647"))
-Description: data.QC is an algorithm designed to perform robust preprocessing of meteorological data. 
-It provides functionalities for cleaning, quality control, and analysis of hydrometeorological datasets.
+Description: data.QC is an algorithm designed to perform robust preprocessing of meteorological data. It provides functionalities for cleaning, quality control, and analysis of hydrometeorological datasets.
 License: Apache License 2.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
