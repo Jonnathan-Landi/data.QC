@@ -43,7 +43,7 @@ library(data.table)
 
 # Create an example data.table
 dt <- data.table(
-  TIMESTAMP = seq.POSIXt(from = as.POSIXct("2024-01-01 00:00"), 
+  TIMESTAMP = seq.POSIXt(from = as.POSIXct("2024-01-01 00:00"),
                          to = as.POSIXct("2024-01-01 12:00"), by = "hour"),
   TempAire_Avg = c(20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32)
 )
