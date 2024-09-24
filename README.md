@@ -5,7 +5,6 @@ The tests performed on the hourly data, mark as “C” the data that meet all t
 ¡¡¡¡¡¡¡NOTE !!!!!!!
 This algorithm is under development, some files have not yet been uploaded to the repository, as they are locally in the testing phase.
 
-Translated with DeepL.com (free version)
 ### Installation
 
 ------------------------------------------------------------------------
